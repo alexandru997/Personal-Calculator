@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>IncomeCalculator</title>
+  </head>
+  <body>
+    <h1 class="personal">Personal income calculator</h1>
+    <div class="main__wrapper">
+      <div class="inputs__block">
+        <h6>Income monthly</h6>
+        <div class="inputs__wrapper">
+          <input
+            type="number"
+            placeholder="Salary"
+            id="income-salary"
+            class="input"
+            name="salary"
+          />
+          <input
+            type="number"
+            placeholder="Freelance"
+            id="income-freelance"
+            class="input"
+          />
+          <input
+            type="number"
+            placeholder="Additional income"
+            id="income-extra-1"
+            class="input"
+          />
+          <input
+            type="number"
+            placeholder="Additional income"
+            id="income-extra-2"
+            class="input"
+          />
+        </div>
+      </div>
+      <div class="inputs__block-comulmn">
+        <h6>Compulsory Income</h6>
+        <div class="inputs__wrapper">
+          <input
+            type="number"
+            placeholder="Rent an apartament"
+            id="costs-flat"
+            class="input"
+          />
+          <input
+            type="number"
+            placeholder="Housing"
+            id="costs-house-service"
+            class="input"
+          />
+          <input
+            type="text"
+            placeholder="Transport"
+            id="costs-transport"
+            class="input"
+          />
+          <input
+            type="number"
+            placeholder="Credits"
+            id="costs-credits"
+            class="input"
+          />
+        </div>
+      </div>
+      <div class="inputs__clock-column-right">
+        <div class="total-numb">
+          <h6>Aviable per mounth</h6>
+          <input
+            type="number"
+            class="total"
+            id="total-month"
+            value="0"
+            readonly
+          />
+        </div>
+        <div class="total-numb">
+          <h6>Aviable per day</h6>
+          <input
+            type="number"
+            class="total"
+            id="total-day"
+            value="0"
+            readonly
+          />
+        </div>
+        <div class="total-numb">
+          <h6>Acumulate for a year</h6>
+          <input
+            type="number"
+            class="total"
+            id="total-year"
+            value="0"
+            readonly
+          />
+        </div>
+      </div>
+    </div>
+    <div class="range__block">
+      <h6>Money box</h6>
+      <div class="range-wrapper">
+        <input type="range" min="0" max="100" value="0" id="money-box-range" />
+      </div>
+      <div class="money__procent"><span id="total-procents">0</span>%</div>
+    </div>
+    <div class="result__block">
+      <div class="total-numb">
+        <h6>Acumulate:</h6>
+        <input class="accumulations" type="number" id="accumulation" value="0" readonly />
+      </div>
+      <div class="total-numb">
+        <h6>Spend:</h6>
+        <input  class="accumulations" type="number" id="spend" value="0" readonly />
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eff6ff;
+}
+.personal {
+  display: flex;
+  justify-content: center;
+}
+.main__wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.inputs__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 350px;
+  height: 300px;
+  padding: 20px;
+}
+.inputs__block-comulmn {
+  display: inline-block;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+input {
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  border: transparent;
+}
+.total {
+  background-color: #eff6ff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: 20px;
+  margin-left: 30px;
+}
+.money__procent {
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: -15px;
+}
+.result__block {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.accumulations {
+  border: transparent;
+  background-color: #eff6ff;
+  font-size: 20px;
+}
+
+.personal {
+  display: flex;
+  align-items: center;
+}
